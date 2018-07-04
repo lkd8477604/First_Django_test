@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    li{
+        display: inline;
+    }
+</style>
+<body>
+<div>
+    <ul>
+        <li>版块</li>
+        <li>汽车</li>
+        <li>搞笑</li>
+    </ul>
+    {% block content-container %}
+    <div>can you replace me?</div>
+    {% endblock %}
+    <footer>
+        <p>End Of Life</p>
+    </footer>
+</div>
+</body>
+</html>

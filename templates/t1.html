@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/app1/db_handle/" method="post">
+        <p><input type="text" name="username" id="qwe"/> </p>
+        <p><input type="text" name="password"/> </p>
+        <p><input type="text" name="age"/> </p>
+        <p><input type="submit" value="提交"/> </p>
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in i %}
+            <tr>
+                <td>{{ item.username }}</td>
+                <td edit="true">{{ item.password }}</td>
+                <td>{{ item.age }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+<script src="/static/jquery-3.3.1.min.js"></script>
+<script>
+    $('#qwe').text('adfd')
+    var dd = $('#qwe').
+    console.log(dd)
+</script>
+</body>
+</html>
